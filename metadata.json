@@ -1,0 +1,6 @@
+{
+  "name": "SuJu स्टडी — SuJu AI गुरुजी",
+  "description": "आपका अपना AI टीचर जो गणित, विज्ञान, हिंदी और कोडिंग के सवाल आसान भाषा में स्टेप-बाय-स्टेप समझाता है।",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  code,
+  pre {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Teacher Markdown Prose Formatting */
+.teacher-prose {
+  font-size: 0.975rem;
+  line-height: 1.72;
+  color: #1e293b;
+}
+
+.teacher-prose h2,
+.teacher-prose h3,
+.teacher-prose h4 {
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.teacher-prose h2 {
+  font-size: 1.15rem;
+}
+
+.teacher-prose h3 {
+  font-size: 1.05rem;
+}
+
+.teacher-prose p {
+  margin-bottom: 0.75rem;
+}
+
+.teacher-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.teacher-prose ul,
+.teacher-prose ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0.85rem;
+  padding-left: 1.35rem;
+}
+
+.teacher-prose ul {
+  list-style-type: disc;
+}
+
+.teacher-prose ol {
+  list-style-type: decimal;
+}
+
+.teacher-prose li {
+  margin-bottom: 0.4rem;
+}
+
+.teacher-prose li > strong {
+  color: #0f172a;
+}
+
+.teacher-prose blockquote {
+  margin: 1rem 0;
+  padding: 0.9rem 1.1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #bfdbfe;
+  background-color: #eff6ff;
+  color: #0f172a;
+}
+
+.teacher-prose blockquote p {
+  margin-bottom: 0.25rem;
+}
+
+.teacher-prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.teacher-prose pre {
+  margin: 0.9rem 0;
+  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+  background-color: #0f172a;
+  color: #f8fafc;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.teacher-prose code:not(pre code) {
+  background-color: #f1f5f9;
+  color: #1d4ed8;
+  padding: 0.12rem 0.38rem;
+  border-radius: 0.35rem;
+  font-size: 0.86em;
+  font-weight: 500;
+}
+
+.teacher-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.9rem 0;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.teacher-prose th,
+.teacher-prose td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.teacher-prose th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.teacher-prose .katex-display {
+  margin: 0.85rem 0;
+  padding: 0.75rem 1rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
